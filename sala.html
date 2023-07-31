@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Contador dos numeros
+    </h1>
+    <label>Diga um valor final</label><br>
+    <input type="number" id="final"><br>
+    <label>Coloque o valor da variação</label><br>
+    <input type="number" id="condi"><br>
+    <button onclick="condicao()">clique aqui</button>
+
+    <script>
+        function condicao(){
+            contador = 0
+            let number = document.getElementById("final").value
+            let fin = document.getElementById("condi").value
+            while(contador <= Number(number)){
+                document.write (contador)
+                // // console.log
+                // alert (contador)
+                contador = contador + Number(fin)
+            }
+        }
+    </script>
+</html>
